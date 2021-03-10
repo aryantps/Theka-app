@@ -9,6 +9,9 @@ body {
     font-size: 1.6rem;
     font-family: Helvetica, Arial, sans-serif;
 }
+#root {    /* to make public/index.html full height*/
+  height: 100%;
+}
 
 /* Layout */
 .grid-container {
