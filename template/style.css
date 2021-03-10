@@ -36,6 +36,14 @@ footer{
     color : white;
 }
 /* Common */
+h1{
+    font-size: 1.8rem;
+    padding: 1 rem 0;  /* vertiacally - 1rem, horizontly - 0*/
+}
+h2{
+    font-size: 1.6rem;
+    padding: 1 rem 0;  /* vertiacally - 1rem, horizontly - 0*/
+}
 a{
     text-decoration: none;
 }
@@ -85,4 +93,18 @@ img.medium {
 .card-body > * {               /* all direct child of card-body*/
     margin-bottom: 0.5rem;
 }
+.price {
+    font-size: 2rem;
+}
+
+/* Rating */
+.rating span{   /* for all span inside rating*/
+    color: gold;
+    margin: 00.1rem;
+}
+
+
+
+
+
 /* */
