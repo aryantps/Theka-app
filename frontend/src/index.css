@@ -104,9 +104,9 @@ img.medium {
     color: gold;
     margin: 00.1rem;
 }
-
-
-
+.rating span:last-child{
+    color: black;
+}
 
 
 /* */

@@ -1,5 +1,9 @@
 import React from 'react';
 import data from './data';
+
+import Product from './components/Product';
+
+
 function App() {
   return (
     <div className="grid-container">
@@ -13,33 +17,15 @@ function App() {
         </div>
       </header>
       <main>
-        <div className="row center">
-          {
-            data.products.map(product => (
-              <div key={product._id} className="card">
-                <a href={`/product/${product._id}`}>
-                  {/* <!-- image size should be 680px x 830px --> */}
-                  <img
-                    className="medium"
-                    src={product.image}
-                    alt={product.name} />
-                </a>
-                <div className="card-body">
-                  <a href={`/product/${product._id}`}>
-                    <h2>{product.name}</h2>
-                  </a>
-                  <div className="rating">
-                    <span><i className="fa fa-star"></i> </span>
-                    <span><i className="fa fa-star"></i></span>
-                    <span><i className="fa fa-star"></i></span>
-                    <span><i className="fa fa-star"></i></span>
-                    <span><i className="fa fa-star-half-o"></i></span>
-                  </div>
-                  <div className="price"><span>&#8377;</span>{product.price}</div>
-                </div>
-              </div>
-            ))
-          }
+        <div>
+          <div className="row center">
+            {
+              data.products.map(product => (
+                // create product Component and pass product Object as a product
+                <Product key={product._id} product={product}></Product>
+              ))
+            }
+          </div>
         </div>
       </main>
       <footer className="row center">
