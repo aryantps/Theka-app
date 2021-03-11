@@ -1,14 +1,28 @@
 {
   "name": "theka",
+  "type": "module",
   "version": "1.0.0",
   "description": "e-commerce for alcohol ",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch backend --exec node --experimental-modules  backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "aryant",
   "license": "ISC",
   "dependencies": {
-    "create-react-app": "^4.0.3"
-  }
+    "create-react-app": "^4.0.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aryantps/Theka-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aryantps/Theka-app/issues"
+  },
+  "homepage": "https://github.com/aryantps/Theka-app#readme"
 }
